@@ -1,0 +1,32 @@
+{
+    "name": "chaos/framework",
+    "type": "project",
+    "require": {
+        "chaos/core": "*"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../core",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../dotenv",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "bootstrap/app.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
