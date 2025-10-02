@@ -10,3 +10,5 @@ if (env('APP_ENV') == "development" || env("APP_DEBUG") == true) {
 }
 
 Config::loadFromPath(__DIR__ . '/../config');
+
+date_default_timezone_set(config('app.timezone'));
