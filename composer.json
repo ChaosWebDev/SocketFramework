@@ -1,25 +1,11 @@
 {
-    "name": "chaos/framework",
+    "name": "chaosfw/framework",
     "type": "project",
+    "license": "MIT",
     "require": {
-        "chaos/core": "*"
+        "php": "^8.2",
+        "chaoswd/core": "*"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../core",
-            "options": {
-                "symlink": true
-            }
-        },
-        {
-            "type": "path",
-            "url": "../dotenv",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/"
